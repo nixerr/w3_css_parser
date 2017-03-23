@@ -1,0 +1,123 @@
+REC	volume	<number> | <percentage> | silent | x-soft | soft | medium | loud |x-loud | inherit
+REC	speak	normal | none | spell-out | inherit
+REC	pause-before	<time> | <percentage> | inherit
+REC	pause-after	<time> | <percentage> | inherit
+REC	pause	[ [<time> | <percentage>]{1,2} ] | inherit
+REC	cue-before	<uri> | none | inherit
+REC	cue-after	<uri> | none | inherit
+REC	cue	[ <cue-before> || <cue-after> ] | inherit
+REC	play-during	<uri> [ mix || repeat ]? | auto | none | inherit
+REC	azimuth	<angle> | [[ left-side | far-left | left | center-left | center |center-right | right | far-right | right-side ] || behind ] |leftwards | rightwards | inherit
+REC	elevation	<angle>  | below | level | above | higher | lower | inherit
+REC	speech-rate	<number>  | x-slow | slow | medium | fast | x-fast | faster | slower| inherit
+REC	voice-family	[[<specific-voice>  | <generic-voice> ],]* [<specific-voice>  |<generic-voice> ] | inherit
+REC	pitch	<frequency> | x-low | low | medium | high | x-high | inherit
+REC	pitch-range	<number> | inherit
+REC	stress	<number> | inherit
+REC	richness	<number> | inherit
+REC	speak-punctuation	code | none | inherit
+REC	speak-numeral	digits | continuous | inherit
+REC	speak-header	once | always | inherit
+REC	color	<color> | inherit
+REC	background-color	<color> | transparent | inherit
+REC	background-image	<uri> | none | inherit
+REC	background-repeat	repeat | repeat-x | repeat-y | no-repeat | inherit
+REC	background-attachment	scroll | fixed | inherit
+REC	background-position	[ [ <percentage> | <length> | left | center | right ]           [ <percentage> | <length> | top | center | bottom ]? ] |         [ [ left | center | right ] || [ top | center | bottom ] ] |         inherit
+REC	background	[<background-color> || <background-image> || <background-repeat>|| <background-attachment> || <background-position>] | inherit
+REC	margin-top	<margin-width> | inherit
+REC	margin-bottom	<margin-width> | inherit
+REC	margin-right	<margin-width> | inherit
+REC	margin-left	<margin-width> | inherit
+REC	margin	<margin-width>{1,4} | inherit
+REC	padding-top	<padding-width> | inherit
+REC	padding-right	<padding-width> | inherit
+REC	padding-bottom	<padding-width> | inherit
+REC	padding-left	<padding-width> | inherit
+REC	padding	<padding-width>{1,4} | inherit
+REC	border-top-width	<border-width> | inherit
+REC	border-right-width	<border-width> | inherit
+REC	border-bottom-width	<border-width> | inherit
+REC	border-left-width	<border-width> | inherit
+REC	border-width	<border-width>{1,4} | inherit
+REC	border-top-color	<color> | transparent | inherit
+REC	border-right-color	<color> | transparent | inherit
+REC	border-bottom-color	<color> | transparent | inherit
+REC	border-left-color	<color> | transparent | inherit
+REC	border-color	[ <color> | transparent ]{1,4} | inherit
+REC	border-top-style	<border-style> | inherit
+REC	border-right-style	<border-style> | inherit
+REC	border-bottom-style	<border-style> | inherit
+REC	border-left-style	<border-style> | inherit
+REC	border-style	<border-style>{1,4} | inherit
+REC	border-top	[ <border-width> || <border-style> || <border-top-color> ] | inherit
+REC	border-right	[ <border-width> || <border-style> || <border-top-color> ] | inherit
+REC	border-bottom	[ <border-width> || <border-style> || <border-top-color> ] | inherit
+REC	border-left	[ <border-width> || <border-style> || <border-top-color> ] | inherit
+REC	border	[ <border-width> || <border-style> || <border-top-color> ] | inherit
+REC	caption-side	top | bottom | inherit
+REC	table-layout	auto | fixed | inherit
+REC	border-collapse	collapse | separate | inherit
+REC	border-spacing	<length> <length>? | inherit
+REC	empty-cells	show | hide | inherit
+REC	display	inline | block | list-item | inline-block |table | inline-table | table-row-group | table-header-group |table-footer-group | table-row | table-column-group | table-column |table-cell | table-caption | none | inherit
+REC	position	static | relative | absolute | fixed | inherit
+REC	top	<length> | <percentage> | auto | inherit
+REC	right	<length> | <percentage> | auto | inherit
+REC	bottom	<length> | <percentage> | auto | inherit
+REC	left	<length> | <percentage> | auto | inherit
+REC	float	left | right | none | inherit
+REC	clear	none | left | right | both | inherit
+REC	z-index	auto | <integer> | inherit
+REC	direction	ltr | rtl | inherit
+REC	unicode-bidi	normal | embed | bidi-override | inherit
+NOTE	grid-template-areas	none | <string>+    
+NOTE	grid-template-columns	auto | <col-width>+    
+NOTE	grid-template-rows	auto | <row-height>+    
+NOTE	flow	auto | <identifier> | <string> | * | same    
+NOTE	chains	none | <identifier>+ [ ,      <identifier>+ ]*    
+REC	overflow	visible | hidden | scroll | auto | inherit
+REC	clip	<shape> | auto | inherit
+REC	visibility	visible | hidden | collapse | inherit
+REC	color	<color> | inherit    
+REC	opacity	<alphavalue> | inherit    
+REC	content	normal | none | [ <string> | <uri> | <counter> | attr(<identifier>) | open-quote | close-quote | no-open-quote | no-close-quote ]+ | inherit
+REC	quotes	[<string> <string>]+ | none | inherit
+REC	counter-reset	[ <identifier> <integer>? ]+ | none | inherit
+REC	counter-increment	[ <identifier> <integer>? ]+ | none | inherit
+REC	list-style-type	disc | circle | square | decimal | decimal-leading-zero |  lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none | inherit
+REC	list-style-image	<uri> | none | inherit
+REC	list-style-position	inside | outside | inherit
+REC	list-style	[ <list-style-type> || <list-style-position> || <list-style-image> ] | inherit
+REC	cursor	[ [<uri> ,]* [ auto | crosshair | default | pointer | move | e-resize| ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize| w-resize | text | wait | help | progress ] ] | inherit
+REC	outline	[ <outline-color> || <outline-style> || <outline-width> ] | inherit
+REC	outline-width	<border-width> | inherit
+REC	outline-style	<border-style> | inherit
+REC	outline-color	<color> | invert | inherit
+REC	font-family	[[ <family-name> | <generic-family> ] [, <family-name>| <generic-family>]* ] | inherit
+REC	font-style	normal | italic | oblique | inherit
+REC	font-variant	normal | small-caps | inherit
+REC	font-weight	normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 |600 | 700 | 800 | 900 | inherit
+REC	font-size	<absolute-size> | <relative-size> | <length> | <percentage> | inherit
+REC	font	[ [ <font-style> || <font-variant> || <font-weight> ]?<font-size> [ / <line-height> ]? <font-family> ] | caption | icon | menu | message-box | small-caption | status-bar | inherit
+REC	width	<length> | <percentage> | auto | inherit
+REC	min-width	<length> | <percentage> | inherit
+REC	max-width	<length> | <percentage> | none | inherit
+REC	height	<length> | <percentage> | auto | inherit
+REC	min-height	<length> | <percentage> | inherit
+REC	max-height	<length> | <percentage> | none | inherit
+REC	line-height	normal | <number> | <length> | <percentage> | inherit
+REC	vertical-align	baseline | sub | super | top | text-top | middle |    bottom | text-bottom | <percentage> | <length> | inherit
+REC	text-indent	<length> | <percentage> | inherit
+REC	text-align	left | right | center | justify | inherit
+REC	text-decoration	none | [ underline || overline || line-through || blink ] | inherit
+REC	letter-spacing	normal | <length> | inherit
+REC	word-spacing	normal | <length> | inherit
+REC	text-transform	capitalize | uppercase | lowercase | none | inherit
+REC	white-space	normal | pre | nowrap | pre-wrap | pre-line | inherit
+REC	page-break-before	auto | always | avoid | left | right | inherit
+REC	page-break-after	auto | always | avoid | left | right | inherit
+REC	page-break-inside	avoid | auto | inherit
+REC	orphans	<integer> | inherit
+REC	widows	<integer> | inherit
+NOTE	presentation-level	<integer> | same | increment
